@@ -1,0 +1,24 @@
+<div class="card m-3">
+  <img class="card-img" [src]="product.images[0]" alt="Vans" />
+  <div class="card-img-overlay d-flex justify-content-end">
+    <div class="card-link text-danger like">
+      <span class="badge custom-badge">New</span>
+    </div>
+  </div>
+  <div class="card-body">
+    <h4 class="card-title">{{ product.title }}</h4>
+    <h6 class="card-subtitle mb-2 text-muted">
+      Category: {{ product.category }}
+    </h6>
+    <p class="card-text card-disc">
+      {{ product.description }}
+    </p>
+
+    <div class="buy d-flex justify-content-between align-items-center">
+      <div class="price text-success">
+        <h5 class="mt-4">${{ product.price }}</h5>
+      </div>
+      <a href="#" class="btn btn-danger mt-3"> Add to Cart</a>
+    </div>
+  </div>
+</div>
